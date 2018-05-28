@@ -1,0 +1,77 @@
+.i {
+	font-style: italic;
+}
+
+.b {
+	font-weight: bold;	
+}
+
+.small {
+    font-size: .85 * @font-size;
+}
+
+.p-t {
+   	padding-top: @base-margin;
+}
+
+.p-r {
+   	padding-right: @base-margin;
+}
+
+.p-l {
+   	padding-left: @base-margin;
+}
+
+.p {
+   	.p-r;
+   	.p-l;
+}
+
+.last {
+    margin-bottom: 0;
+}
+
+.first {
+    margin-top: 0;
+}
+
+.text-center {
+    text-align: center;
+}
+
+.text-right {
+    text-align: right;
+}
+
+.text-left {
+    text-align: left;
+}
+
+.clear {
+    clear: both;
+}
+
+.b-t {
+	border-top: @content-border;
+}
+
+.btn-primary {
+    text-decoration: none;
+    color: #fff;
+    background-color: @primary-color;
+    border: solid @primary-color;
+    border-width: 5px 10px;
+    line-height: 2;
+    font-weight: bold;
+    text-align: center;
+    cursor: pointer;
+    display: inline-block;
+    border-radius: 5px;
+    text-transform: capitalize;
+}
+
+.list-item {
+	line-height: 24px;
+    display: inline-block;
+    margin-right: @base-margin;
+}

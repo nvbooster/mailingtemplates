@@ -1,0 +1,62 @@
+body, .body-wrap{
+    background-color: @bg-color;
+}
+
+.body-wrap {
+    width: 100%;
+}
+
+.container {
+    display: block !important;
+    max-width: @content-width;
+    margin: 0 auto;
+    clear: both;
+}
+
+.content {
+    max-width: @content-width;
+    margin: 0 auto;
+    display: block;
+}
+
+.main {
+    background: #fff;
+    border: @content-border;
+}
+
+.content-wrap {
+    padding: @base-margin;
+}
+
+.content-block {
+    padding: 0 0 @base-margin;
+}
+
+.header {
+    width: 100%;
+    clear: both;
+    color: @pre-header-color;
+    
+	a {
+	    color: @pre-header-link-color;
+	}
+	
+	p, a, td {
+	    font-size: @pre-header-font-size;
+	}
+}
+
+.footer {
+    width: 100%;
+    clear: both;
+    color: @footer-color;
+    padding: @base-margin;
+    
+	a {
+	    color: @footer-link-color;
+	}
+	
+	p, a, td {
+	    font-size: @footer-font-size;
+	}
+}
