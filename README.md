@@ -39,8 +39,7 @@ Require template images in `assets/js/dev.js` if any
 Run symfony in your web-server of choice or use php built-in webserver
 
 ```bash
-cd public
-php -S localhost:8000
+php -S localhost:8000 -t public/
 ```
 
 > Warning! Built-in server works only with using webpack dev-server. Trying to inline styles with static built styles will block web-server.
@@ -49,7 +48,7 @@ php -S localhost:8000
 Run webpack dev-server
 
 ```bash
-yarn run-dev-server
+yarn dev-server
 ```
 
 Browse to your template, base style and responsive style will be injected separatly

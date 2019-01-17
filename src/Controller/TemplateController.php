@@ -18,7 +18,13 @@ class TemplateController extends Controller
     public function indexAction(Request $request, Packages $packages, $template)
     {
         try {
-            $content = $this->renderView($template.'.html.twig');
+            $htmlName = $template.'.html';
+            $path = $this->container->getParameter('twig.default_path');
+            if (file_exists($path.'/'.$htmlName)) {
+                $content = file_get_contents($path.'/'.$htmlName);
+            } else {
+                $content = $this->renderView($htmlName.'.twig');
+            }
             $responsive = !$request->query->has('noresponsive');
 
             if ($request->query->has('inline')) {
